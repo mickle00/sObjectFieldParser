@@ -2,10 +2,6 @@
 from xml.dom import minidom
 import glob
 
-#sObjects = glob.glob('../src/objects/*.object')
-sObjects = glob.glob('examples/*.object')
-print sObjects
-
 def cleanSObject(fileLocation):
   xmlDoc = minidom.parse(fileLocation)
   cleanFileName = fileLocation.replace('.object', '.schema')
@@ -19,4 +15,8 @@ def cleanSObject(fileLocation):
     newFile.write(outputText)
   newFile.close()
 
-cleanSObject(sObjects[0])
+def doCleaning():
+  sObjects = glob.glob('src/objects/*.object')
+  print sObjects
+  for fileName in sObjects:
+    cleanSObject(fileName)
