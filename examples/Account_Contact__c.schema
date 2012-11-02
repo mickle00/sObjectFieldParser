@@ -1,0 +1,12 @@
+Account__c - MasterDetail
+Active__c - Checkbox
+Contact__c - MasterDetail
+Full_Name__c - Text
+Health_Safety_Contact__c - Checkbox
+Inactive_Date__c - Date
+Integration_Status__c - Text
+Number__c - Text
+PSG_Account_Id__c - Text
+PSG_Contact_Id__c - Text
+Primary_Content_Contact__c - Checkbox
+Unique_Key__c - Text
